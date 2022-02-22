@@ -2,17 +2,17 @@ package org.example.objects;
 
 import org.example.interfaces.IAnimal;
 
-public class Dog implements IAnimal {
+public class Cat implements IAnimal {
 
     private String name;
-    private String color;
+    private String breed;
 
-    public Dog(String name, String color) {
+    public Cat(String name, String breed) {
         this.name = name;
-        this.color = color;
+        this.breed = breed;
     }
 
-    public Dog() {
+    public Cat() {
     }
 
     @Override
@@ -33,18 +33,18 @@ public class Dog implements IAnimal {
         this.name = name;
     }
 
-    public String getColor() {
-        return color;
+    public String getBreed() {
+        return breed;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setBreed(String breed) {
+        this.breed = breed;
     }
 
     @Override
     public String toString() {
-        return "Ит\n" +
-                "аты: " + name +
-                ", тусу: " + color;
+        return "Кот " +
+                "имя: " + name +
+                ", порода: " + breed;
     }
 }

@@ -11,16 +11,29 @@
 
     <bean id="myPerson"
           class="org.example.objects.Person">
-        <property name="iAnimal" ref="myAnimal"/>
+        <property name="iAnimal" ref="myCat"/>
         <property name="name" value="${person.name}"/>
         <property name="age" value="${person.age}"/>
     </bean>
 
-    <bean id="myAnimal"
+    <bean id="person2"
+          class="org.example.objects.Person">
+        <property name="iAnimal" ref="myDog"/>
+        <property name="name" value="${person.name}"/>
+        <property name="age" value="${person.age}"/>
+    </bean>
+
+    <bean id="myDog"
           class="org.example.objects.Dog">
         <!--<constructor-arg index = "1" value = "${dog.color}"/>-->
         <property name="name" value="${animal.name}"/>
         <property name="color" value="${animal.color}"/>
+    </bean>
+
+    <bean id="myCat"
+          class="org.example.objects.Cat">
+        <property name="name" value="${cat.name}"/>
+        <property name="breed" value="${cat.breed}"/>
     </bean>
 
 </beans>

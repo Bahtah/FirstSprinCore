@@ -20,7 +20,7 @@ public class Person {
     public void persDog() {
         animal.animalPlus();
         animal.animalMinus();
-        System.out.println(name + " " + animal.getName() + "ти жетелеп кетти");
+        System.out.println(name + " " + animal.getName() + " жетелеп кетти");
     }
 
     public String getName() {
@@ -49,9 +49,9 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person " +
-                "имя = " + name +
-                ", жашы = " + age;
+        return "Персонаж " +
+                "имя: " + name +
+                ", жашы: " + age;
     }
 
 }
